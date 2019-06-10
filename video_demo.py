@@ -86,11 +86,11 @@ if __name__ == '__main__':
     nms_thesh = float(args.nms_thresh)
     start = 0
 
-    CUDA = not torch.cuda.is_available()
+    CUDA = torch.cuda.is_available()
 
     num_classes = 80
 
-    CUDA = not torch.cuda.is_available()
+    CUDA = torch.cuda.is_available()
     
     bbox_attrs = 5 + num_classes
     
